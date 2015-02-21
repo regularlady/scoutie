@@ -1,6 +1,6 @@
 # Scoutie
 
-TODO: Write a gem description
+A rake task to check the health of live websites 
 
 ## Installation
 
