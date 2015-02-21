@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Scoutie::VERSION
   spec.authors       = ["Brittany Martin"]
   spec.email         = ["brittany.jill.martin@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
+  spec.summary       = %q{A rake task to check the health of live websites}
   spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Brit200313/scoutie"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
