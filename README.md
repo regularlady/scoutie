@@ -1,6 +1,6 @@
 # Scoutie
 
-A rake task to check the health of live websites 
+A rake task to check the status code of a JSON request
 
 ## Installation
 

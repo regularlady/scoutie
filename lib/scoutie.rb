@@ -1,4 +1,5 @@
 require "scoutie/version"
+require 'httparty'
 
 begin
   require "pry"
@@ -6,5 +7,8 @@ rescue LoadError
 end
 
 module Scoutie
-  # Your code goes here...
+  def get_status(url)
+    response = HTTParty.get(url, :verify => false)
+    status = response.code
+  end
 end
