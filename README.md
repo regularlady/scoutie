@@ -2,6 +2,8 @@
 
 A rake task to check the status code of a JSON request
 
+![alt tag](https://raw.github.com/Brit200313/scoutie/blob/master/img/scoutie.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
