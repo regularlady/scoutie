@@ -4,8 +4,8 @@ module Scoutie
   class Status
     def get_status(url)
       puts "you got in!"
-      apiresponse = HTTParty.get(url, :query => {:output => 'json'})
-      status = apiresponse.response.code
+      api_response = HTTParty.get(url, :query => {:output => 'json'})
+      status = api_response.response.code.to_i
 
       case status
       when 200
@@ -31,8 +31,10 @@ module Scoutie
       when 503
         puts "Busy busy busy! The API is too busy to accept your request, or if your access to the API has been temporarily suspended due to overuse."
       else
-        puts "Your request returned #{a} -- Scoutie has no idea what to do with that."
+        puts "Your request returned #{api_response} -- Scoutie has no idea what to do with that."
       end
+
+      status
     end
   end
 end
