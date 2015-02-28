@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Scoutie::VERSION
   spec.authors       = ["Brittany Martin"]
   spec.email         = ["brittany.jill.martin@gmail.com"]
-  spec.summary       = %q{A rake task to check the health of live websites}
-  spec.description   = %q{Works with HTTParty to return response codes}
+  spec.summary       = %q{Easy to use rake task to check JSON API calls}
+  spec.description   = %q{Easy to use rake task to check JSON API calls}
   spec.homepage      = "https://github.com/Brit200313/scoutie"
   spec.license       = "MIT"
 
