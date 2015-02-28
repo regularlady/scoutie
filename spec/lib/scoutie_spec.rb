@@ -10,11 +10,9 @@ module Scoutie
         expect(s).to be(200)
       end
 
-      it "returns a 403 status code when denied" do
-        # This request is returning a 200. I don't have URL
-        # that returns a 403.
-        s = status.get_status 'http://lorem-ipsum.me/api/json'
-        expect(s).to be(403)
+      it "returns a 401 status code when denied" do
+        s = status.get_status 'https://www.yammer.com/api/v1/subscriptions/to_user/:id.json'
+        expect(s).to be(401)
       end
 
       it "returns a 403 status code when denied" do
@@ -23,7 +21,7 @@ module Scoutie
       end
 
       it "throws exception if no protocol provided" do
-        expect{ status.get_status 'bananas!' }.to raise_error(Errno::ECONNREFUSED)
+        expect{ status.get_status 'bananas!' }.to raise_error(URI::InvalidURIError)
       end
     end
   end

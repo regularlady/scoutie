@@ -2,10 +2,10 @@ require 'httparty'
 
 module Scoutie
   class Status
-    def get_status(url)
-      puts "you got in!"
+    def get_status(url) 
       api_response = HTTParty.get(url, :query => {:output => 'json'})
       status = api_response.response.code.to_i
+      puts "Response: #{status}"
 
       case status
       when 200

@@ -22,7 +22,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Have a JSON API you want to test as you're coding along? 
+
+Simply run:
+
+    $ rake scoutie[url]
+
+and Scoutie will return a response code and recommendation on proceeding. 
 
 ## Contributing
 
