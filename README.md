@@ -30,6 +30,16 @@ Simply run:
 
 and Scoutie will return a response code and recommendation on proceeding. 
 
+## Examples
+
+    $ rake scoutie["http://jsonip.com"]                                                                                                                                          ⏎ ✱ ◼
+    Response: 200
+    Sweet! You're golden to use that API.
+
+    $ rake scoutie["https://www.yammer.com/api/v1/subscriptions/to_user/:id.json"]                                                                                                 ✱ ◼
+    Response: 401
+    Nice try! Someone is missing an authorization token.
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/scoutie/fork )
